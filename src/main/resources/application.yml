@@ -1,0 +1,26 @@
+spring:
+   application:
+        name: config-server
+   #git的地址，spring cloud config默认使用git服务存储配置数据
+   cloud:
+    config:
+      server:
+        git:
+          uri: https://git.oschina.net/chrywhy/test
+          searchPaths: spring-cloud/helloworldConfig
+server:
+   port: 8000
+
+#eureka的配置
+
+eureka:
+   client:
+       serviceUrl:
+           defaultZone: http://192.168.179.128:9000/eureka/
+   instance:
+    lease-expiration-duration-in-seconds: 30 
+    lease-renewal-interval-in-seconds: 10
+
+  
+
+  
