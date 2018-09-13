@@ -9,14 +9,14 @@ spring:
           uri: https://github.com/babyhen/config-server.git
           searchPaths: config-data
 server:
-   port: 8000
+   port: 2080
 
 #eureka的配置
 
 eureka:
    client:
        serviceUrl:
-           defaultZone: http://192.168.179.128:9000/eureka/
+           defaultZone: http://localhost:1080/eureka/
    instance:
     lease-expiration-duration-in-seconds: 30 
     lease-renewal-interval-in-seconds: 10
